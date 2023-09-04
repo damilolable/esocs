@@ -1,0 +1,388 @@
+* {
+    box-sizing: border-box;
+    margin: none;
+    padding: none;
+}
+
+nav {
+   
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5%;
+    margin: 0px;
+    z-index: 99;
+    color: black;
+    position: fixed;
+    top: 0em;
+    width: 100%;
+    height: 4em;
+    background-color:white;
+   }
+.esoslogo  img {
+    border-radius: 100%;
+}
+.header h2 {
+    position: relative;
+    top: -0.4em;
+}
+nav img {
+    height: 2em;
+    width: 2em;
+    border-radius: 90%;
+
+}
+.sidemenubotton {
+   
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.hidesidemenu {
+    display: none;
+}
+
+.adminbody {
+    position: relative;
+    
+    top: 4.5em;
+    display: flex;
+}
+
+
+.rigthmenu {
+    background-color:white;
+    display: none;
+   width: 14em;
+    height: 100vh;
+    position: fixed;
+    top: 4em;
+    left: 0px;
+box-shadow:1px 20px 20px rgba(172, 171, 171, 0.559) ;
+}
+.newpost a{
+    text-decoration: none;
+    color: white;
+    margin: 1em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0.5em;
+    display: flex;
+    border-radius: 1em;
+    justify-content: space-between;
+    justify-items: center;
+    justify-self: center;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 1.5em;
+    background-color: rgb(217, 213, 213);
+}
+
+
+.menubtn {
+    color: black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 1em;
+    display: flex;
+    justify-items: right;
+    justify-content: space-evenly;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 1.3em;
+}
+.menubtn a {
+    color: black;
+    text-decoration: none;
+}
+.menubtn img{
+    height: 1em;
+    width: 1em;
+    border-radius: 100%;
+}
+.menubtn:hover{
+    background-color: rgba(125, 125, 125, 0.603);
+
+}
+
+.search input{
+    text-transform: capitalize;
+    border-radius: 1em;
+    border: none;
+    padding: 6px;
+    color: white;
+    background-color: black;
+    outline: none;
+    width: 93%;
+    position: fixed;
+    top: 6em;
+    display: none;
+    margin: 0em 1em;
+}
+.leftbody{
+    padding: 1em;
+}
+#admin-nav-show{
+    display: none;}
+
+.treecover  {
+   display: none;
+}
+.admin-nav-btn, .admin-footer-btn {
+    color: white;
+    text-transform: capitalize;
+    font-weight: 700;
+    background-color: rgb(165, 165, 165);
+    border-radius: 0.5em;
+    padding: 0.3em 1em;
+    margin: 1em 0em;
+}
+.admin-nav-btn h1, .admin-footer-btn h1{
+    font-size: 1.5em;
+}
+.admin-nav-btn p,.admin-footer-btn p {
+    font-size: 0.3;
+}
+.layout section {
+margin: 1.2em ;
+}
+
+.layout table {
+    padding: 1em;
+
+}
+.layout button{
+    padding: 5px;
+    color: whitesmoke;
+    background-color: rgb(57, 57, 57);
+    border-radius: 0.3em;
+    border: none;
+    outline: none;
+}
+
+.admin-banner-btn{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+    width: 80vw;
+    border-radius: 0.5em;
+    background-image: url("../img/baba-aladura-and-another.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    text-transform: capitalize;
+    text-shadow: 0px 1px 10px blue;
+    color: aliceblue;
+ }
+ .admin-bannner-text {
+    width:90%;
+    font-size: 2em;
+    font-weight: 800;
+    margin-bottom: 1.2em;
+ }
+ .admin-upload-cover{
+    display: none;
+ }
+ .admin-footer-cover{
+    display: none;
+ }
+
+.admin-footer-cover p{
+    text-transform: capitalize;
+    font-weight: 900;
+    font-size: 1.3em;
+}
+.logosside{
+    background-color: white; 
+    color: rgb(10, 10, 96);
+    padding: 2em;text-transform: capitalize;
+    text-align: center;
+
+}
+.logosside h1{
+width:max-content;
+font-weight: 900;
+font-size: 2em;
+text-decoration: 0.2em underline rgb(10, 10, 96);
+}
+.logosside img{
+    margin-top: 3em;
+    width: 8em;
+    height: 8em;
+}
+.login {
+    position: fixed;
+    z-index: 1000;
+    background-color: rgb(10, 10, 96);
+    height: 100vh;
+    width: 100%;
+ top: 0px;
+ left: 0px;
+ display: flex;
+ color: white;
+}
+.admin-login {
+    padding: 8em 5em ;
+    text-transform: capitalize;
+}
+.admin-login .login-header {
+    text-align: center;
+}
+
+.admin-login .login-header  h2{
+font-size: 2.4em;
+font-weight: 700;
+text-shadow:  0px 0px 7px black;
+}
+
+
+.admin-login  input {
+    text-align: left;
+padding: 3px 3em 3px 4px;
+text-transform: capitalize;
+color: white;
+background-color:rgb(10, 10, 96) ;
+outline: none;
+border: none;
+margin-bottom: 6px;
+border-bottom: 1.5px solid white;
+}
+
+.sign-in {
+    background-color: white;
+    width: 6em;
+    text-align: center;
+    border-radius: 1em;
+    height: 1.7em;
+    color: rgb(10, 10, 96);;
+
+}
+.sign-in:hover {
+    background-color: rgb(10, 10, 96);
+    color: white;
+    box-shadow: 0px 0px 6px white;
+
+}
+.login{
+    display: none;
+}
+.sign-in p {
+    padding-top: 4px;
+    font-weight: 800;
+}
+.pagesbody,.admin-intro,.statsbody,.layoutbody {
+    display: none;
+}
+.blog-card {
+margin: 0.5em 1em;
+    display: flex;
+    align-items: center;
+    padding: 0.3em;
+    background-color: rgb(241, 241, 241);
+}
+.blog-image {
+    width:8em;
+    height: 6em;
+    border-radius: 0.4em;
+}
+.actioncover{
+    padding: 0.3em 1em;
+    
+}
+.action {
+    width: 500px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+
+}
+
+.admin-intro {
+    padding: 4em;
+    background-color: rgb(8, 8, 38);
+    color: white;
+}
+.adminaddbtn img{
+    padding: 0.1em;
+    height: 3.3em;
+    width: 3.3em;
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    border-radius: 100%;
+    box-shadow: 0px 0px 10px black;
+}
+.admin-intro h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 4em;
+    margin:1em ;
+    height:101px;
+
+
+}
+.admin-intro p{
+    text-transform: capitalize;
+    font-size: 1.0em;
+    text-align: center;
+    text-shadow: 0px 0px 9px white;
+}
+.centerwithflex{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    justify-items: center;
+align-content: center;}
+
+.stlye-dommie-btn {
+    display: flex;
+    flex-direction: row;
+justify-content: center;}
+.stlye-dommie-btn div {
+    font-size: 0.7em;
+    text-transform: capitalize;
+    color: whitesmoke;
+    margin:0.4em;
+    border-radius: 1em;
+    padding: 1em 1.5em;
+    background-color: rgb(80, 79, 80);
+
+}
+.admin-intro button{
+    margin:1em;
+    color: white;
+    text-align: center;
+    padding: 0.3em;
+    border-radius: 1em;
+    padding: 0.5em;
+    background-color: rgb(4, 8, 39);
+    box-shadow: inset 0px 0px 10px rgba(72, 70, 70, 0.303);
+    
+}
+
+.admin-intro a {
+    color: white;
+    text-decoration: none;
+}
+
+/* constant in my code */
+
+.flexit {
+    display: flex;
+}
+.statcounts {
+    font-size: 0.7em;
+}
+/* its end */
+
+
+
+.layoutbody button{
+    padding: 0.7em;
+    border: none;
+    outline: none;
+    border-radius: 0.3em;
+    background-color: rgb(188, 188, 188);
+}
+

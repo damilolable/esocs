@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>esocs/home</title>
+  <link rel="stylesheet" href="../css/home.css">
+  <link rel="shortcut icon" href="../img/esocslogo.png" type="image/x-icon">
+  <script src="../javascript/homebe.js" type="module"></script>
+  
+
+  <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+ <style type="text/css">
+ 
+
+.slider {
+   width: 90%;
+   padding: 1em;
+   margin: -30px auto;
+}
+
+.slick-slide {
+ margin: 30px 20px;
+}
+
+
+.slick-prev:before,
+.slick-next:before {
+ color: black;
+}
+
+
+.slick-slide {
+ transition: all ease-in-out .3s;
+
+}
+
+.slick-active {
+ opacity: .5;
+}
+
+.slick-current {
+ opacity: 1;
+}
+
+  </style>
+</head>
+
+<body>
+
+  
+
+  <section class="alltop">
+    <section class="topsocial">
+      <h3 class="topsocialtext">
+        follow us on our social media page for update
+      </h3>
+      <ul class="social_link">
+        <li><a href="https://www.facebook.com/esocschurchpage/"><img
+              src="https://img.icons8.com/color/48/null/facebook-new.png" /></a></li>
+        <li><a href="https://www.instagram.com/esocs.church/?hl=en"><img
+              src="https://img.icons8.com/color/48/null/instagram-new--v1.png" /></a></li>
+        <li><a href="https://twitter.com/esocschurch?lang=en"><img
+              src="https://img.icons8.com/color/48/null/twitter--v1.png" /></a></li>
+        <li><a href="https://soundcloud.com/esocs-website/hymn-18-praise-my-soul"><img
+              src="data:image/jpeg;base64,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"
+              alt="" srcset=""></a></li>
+        <li><a href="https://www.youtube.com/channel/UCbrp8k6dD3voYCf-Ra_F3Tw?app=desktop"><img
+              src="https://img.icons8.com/color/48/null/youtube-play.png" /></a></li>
+      </ul>
+    </section>
+    <nav class="navbar">
+      <div class="logoandname">
+        <img class="logo" src="../img/esocslogo.png" alt=" esocs logo" srcset="">
+        <h2>esocs <span> church</span></h2>
+      </div>
+      <div class="menubtn_cover">
+        <img src="../img/menubtn.png" class="logo " id="menubtn" alt="">
+        <img src="../img/cancelbtn.png" class="logo " id="menu_closesocs" alt="">
+      </div>
+      <ul class="nav_link_cover" id="nav_link_cover">
+        <li><a href="#">Home</a></li>
+        <li><a href="">blog</a></li>
+        <li><a href="">event</a></li>
+        <li><a href="#about">about us</a></li>
+        <li id="resouces1"> resouces</li>
+        <li id="resouces_cover" class="resouces_cover">
+          <ul class="resouces">
+            <li><a href="">cmc</a></li>
+            <li><a href="">Groups & Association </a></li>
+            <li><a href="">Profile</a></li>
+            <li><a href="">Our History</a></li>
+            <li><a href="">Who We Are</a></li>
+            <li><a href="">Leadership</a></li>
+            <li><a href="">Baba Aladura
+              </a></li>
+            <li><a href="">Board Member</a></li>
+
+          </ul>
+        </li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+    </nav>
+
+  </section>
+  <section class="body">
+    <section id="homepagebanner" class="homepagebanner">
+      <h1 class="bannertext "> </h1>
+      <button class="button reminderbtn"><a href="#subscribe"> set a reminder</a> <img src="../img/alarm.png" alt=""
+          srcset=""></button>
+    </section>
+
+    <hr>
+    <section class="slideshows-cover">
+      <div class="slideshow-container">
+        <div class="box-area fade">
+          <iframe vnum="0" frameborder="0"
+            src="https://www.youtube.com/embed?listType=playlist&list=UUbrp8k6dD3voYCf-Ra_F3Tw&index=1&autoplay=1&mute=1"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen class="lestestvideoembed"></iframe>
+        </div>
+        <!-- Full-width images with number and caption text -->
+        <div class="box-area fade">
+          <iframe vnum="0" frameborder="0"
+            src="https://www.youtube.com/embed?listType=playlist&list=UUbrp8k6dD3voYCf-Ra_F3Tw&index=2&autoplay=1&mute=1"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen class="lestestvideoembed"></iframe>
+        </div>
+ <!-- Full-width images with number and caption text -->
+ <div class="box-area fade">
+  <iframe vnum="0" frameborder="0"
+    src="https://www.youtube.com/embed?listType=playlist&list=UUbrp8k6dD3voYCf-Ra_F3Tw&index=2&autoplay=3&mute=1"
+    title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen class="lestestvideoembed"></iframe>
+</div>
+
+        <div class="box-area fade">
+          <iframe vnum="0" frameborder="0"
+            src="https://www.youtube.com/embed?listType=playlist&list=UUbrp8k6dD3voYCf-Ra_F3Tw&index=5&autoplay=1&mute=1"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen class="lestestvideoembed"></iframe>
+        </div>
+        <div class="box-area fade">
+          <iframe vnum="0" frameborder="0"
+            src="https://www.youtube.com/embed?listType=playlist&list=UUbrp8k6dD3voYCf-Ra_F3Tw&index=4&autoplay=1&mute=1"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen class="lestestvideoembed"></iframe>
+
+        </div>
+    </section>
+
+    <!---
+        <section class="youtubevideo1 secspace">
+          
+            <h1 class="titletext">don't miss this sunday</h1>
+          <div class="youtubedestop"> 
+            <div>
+                <iframe vnum="0" width="600" height="340" frameborder="0" src="https://www.youtube.com/embed?listType=playlist&list=UUbrp8k6dD3voYCf-Ra_F3Tw&index=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="lestestvideoembed"></iframe>
+           
+            </div>
+             <div class="youtubevideo2_cover">
+<div class="iframecover">
+    
+                <iframe vnum="0" frameborder="0" src="https://www.youtube.com/embed?listType=playlist&list=UUbrp8k6dD3voYCf-Ra_F3Tw&index=2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="lestestvideoembed"></iframe>
+                <iframe vnum="0" frameborder="0" src="https://www.youtube.com/embed?listType=playlist&list=UUbrp8k6dD3voYCf-Ra_F3Tw&index=3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="lestestvideoembed"></iframe>
+                <iframe vnum="0" frameborder="0" src="https://www.youtube.com/embed?listType=playlist&list=UUbrp8k6dD3voYCf-Ra_F3Tw&index=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="lestestvideoembed"></iframe>
+                <iframe vnum="0" frameborder="0" src="https://www.youtube.com/embed?listType=playlist&list=UUbrp8k6dD3voYCf-Ra_F3Tw&index=5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="lestestvideoembed"></iframe>
+        
+</div>
+<button class="button "><a href="youtube.com/@esocschurch/videos"> view all</a> <img src="../img/arrowleft.png" alt="" srcset=""></button>
+
+            </div>
+          </div>
+            </section>
+
+-->
+    <section class="music_cover">
+      <iframe width="100%" height="450" scrolling="no" frameborder="no"
+        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1406028118&color=%232088be&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+      <div
+        style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+        <a href="https://soundcloud.com/esocs-website" title="ESOCS MUSIC" target="_blank"
+          style="color: #cccccc; text-decoration: none;">ESOCS MUSIC</a> · <a
+          href="https://soundcloud.com/esocs-website/sets/esocs-audio" title="ESOCS AUDIO" target="_blank"
+          style="color: #cccccc; text-decoration: none;">ESOCS AUDIO</a>
+      </div>
+    </section>
+
+    <!---  <section class="youtubevideo3 secspace">
+            <h1 class="titletext">previous videos</h1>
+            <div class="youtubesec_content">
+                  
+            <div class="youtubevideo3_cover">
+                <iframe vnum="0" frameborder="0" src="https://www.youtube.com/embed?listType=playlist&list=UUbrp8k6dD3voYCf-Ra_F3Tw&index=2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="lestestvideoembed"></iframe>
+                <iframe vnum="0" frameborder="0" src="https://www.youtube.com/embed?listType=playlist&list=UUbrp8k6dD3voYCf-Ra_F3Tw&index=3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="lestestvideoembed"></iframe>
+                <iframe vnum="0" frameborder="0" src="https://www.youtube.com/embed?listType=playlist&list=UUbrp8k6dD3voYCf-Ra_F3Tw&index=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="lestestvideoembed"></iframe>
+            </div>
+            <button class="button "><a href="youtube.com/@esocschurch/videos"> view all</a> <img src="../img/arrowleft.png" alt="" srcset=""></button>
+        
+            </div>
+        </section> --->
+    <section id="about" class="about">
+      <h1 class="titletext">about</h1>
+      <div class="about-content">
+
+        <div class="about-img">
+          <img src="" alt="">
+        </div>
+        <div class="about-text">
+          <h1>
+            THE ETERNAL SACRED ORDER OF THE CHERUBIM AND SERAPHIM CHURCH
+          </h1>
+          <p>Welcome to the official website of The Eternal Sacred Order of the Cherubim and Seraphim (ESOCS) Church. A
+            church founded by Saint Moses Orimolade Tunolase (Ajagunmokadi) of the blessed memory for the salvation of
+            mankind through the inspiration of the Holy Ghost in the year of our Lord, 1925 and registered under the
+            Company Ordinance Act [Cap 316] in 1930.
+          </p>
+          <h1>VISION STATEMENT</h1>
+          <p>To Represent And Establish The Kingdom Of God On On Earth Through Prayer And The Preaching Of The Gospel
+          </p>
+          <h1>MISSION STATEMENT</h1>
+          <p>To Arouse The Practice Of A Spiritual Christian Life And Faith As Taught By Jesus Christ Himself To The
+            African In Particular, And The World In General.
+          </p>
+          <h1> CORE VALUES</h1>
+          <p>Love, Unshaken Faith, Holiness, Respect, Diligence And Sacrificial Service</p>
+          <h1>ARTICLE OF FAITH</h1>
+          <p>The church holds unshaken faith in the Holy Bible as the word of God; in salvation through Jesus Christ;
+            and in the Unity of the Trinity. The church believes in the use of incense, purification by prayer and
+            fasting and the resurrection of the dead
+          </p>
+
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="blogarea">
+      <div class="secdetails">
+        <h1 class="sectitletext">blog</h1>
+        <p class="sec-describ">Read the latest updates</p>
+      </div>
+      <div class="variable slider">
+        <div class="blog-card" style="background-image: url(${data.bannerImage})">
+          <div class="blog-image">
+            <h1 class="blog-title">${data.title.substring(0, 100) + "..."}</h1>
+          </div>
+          <div class="blogdetails">  <p class="blog-overview">${data.article.substring(0, 200) + "..."}</p>
+            <div class="blogactionbtn">
+              <a href="/${blog.id}" class="post-btn">read</a>
+              <p>11th june 2021</p>
+            </div>
+
+          </div>
+        </div>
+        <div class="blog-card" style="background-image: url(${data.bannerImage})">
+          <div class="blog-image">
+            <h1 class="blog-title">${data.title.substring(0, 100) + "..."}</h1>
+          </div>
+          <div class="blogdetails">  <p class="blog-overview">${data.article.substring(0, 200) + "..."}</p>
+            <div class="blogactionbtn">
+              <a href="/${blog.id}" class="post-btn">read</a>
+              <p>11th june 2021</p>
+            </div>
+
+          </div>
+        </div><div class="blog-card" style="background-image: url(${data.bannerImage})">
+          <div class="blog-image">
+            <h1 class="blog-title">${data.title.substring(0, 100) + "..."}</h1>
+          </div>
+          <div class="blogdetails">  <p class="blog-overview">${data.article.substring(0, 200) + "..."}</p>
+            <div class="blogactionbtn">
+              <a href="/${blog.id}" class="post-btn">read</a>
+              <p>11th june 2021</p>
+            </div>
+
+          </div>
+        </div><div class="blog-card" style="background-image: url(${data.bannerImage})">
+          <div class="blog-image">
+            <h1 class="blog-title">${data.title.substring(0, 100) + "..."}</h1>
+          </div>
+          <div class="blogdetails">  <p class="blog-overview">${data.article.substring(0, 200) + "..."}</p>
+            <div class="blogactionbtn">
+              <a href="/${blog.id}" class="post-btn">read</a>
+              <p>11th june 2021</p>
+            </div>
+
+          </div>
+        </div><div class="blog-card" style="background-image: url(${data.bannerImage})">
+          <div class="blog-image">
+            <h1 class="blog-title">${data.title.substring(0, 100) + "..."}</h1>
+          </div>
+          <div class="blogdetails">  <p class="blog-overview">${data.article.substring(0, 200) + "..."}</p>
+            <div class="blogactionbtn">
+              <a href="/${blog.id}" class="post-btn">read</a>
+              <p>11th june 2021</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- <button class="button "><a href="#"> view all</a> <img src="../img/arrowleft.png" alt="" srcset=""></button>
+ -->
+
+    </section>
+
+
+    
+
+
+
+<!-- 
+    <section class="textimonial">
+      
+      <div class="slideshow-container">
+
+        
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="img1.jpg" style="width:100%">
+          <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="img2.jpg" style="width:100%">
+          <div class="text">Caption Two</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="img3.jpg" style="width:100%">
+          <div class="text">Caption Three</div>
+        </div>
+
+       
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+
+
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </section>
+
+
+
+
+    <section class="sendtextimonial"></section>
+  </section>
+
+
+
+
+  </section>
+
+   -->
+
+  <footer>
+    <div class="footer-left">
+      <h2>ESOCS CHURCH</h2>
+      <h3>subscribe for great things in <br />message box</h3>
+      <div class="email-input-cover">
+        <input type="email" placeholder="email address...">
+        <button id="submit-email">submit</button>
+      </div>
+      <ul class="social_link">
+        <li><a href="https://www.facebook.com/esocschurchpage/"><img
+              src="https://img.icons8.com/color/48/null/facebook-new.png" /></a></li>
+        <li><a href="https://www.instagram.com/esocs.church/?hl=en"><img
+              src="https://img.icons8.com/color/48/null/instagram-new--v1.png" /></a></li>
+        <li><a href="https://twitter.com/esocschurch?lang=en"><img
+              src="https://img.icons8.com/color/48/null/twitter--v1.png" /></a></li>
+        <li><a href="https://soundcloud.com/esocs-website/hymn-18-praise-my-soul"><img
+              src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxIPBhEQEA8PDxASDxAQEw8PEQ8NDg0QFRUXFhcSExUYHygsGBolGxcVITEhJSktOi8uFyAzODk4NygtLisBCgoKDg0OGxAQGy0lHyYtLi0tLS8tLy0tLS0yLy4zLzAtLS0tLS8tLS0tLy0tLS0tLS0tLS0tLS0tLS0tLS0tNf/AABEIAOEA4QMBEQACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAABAUDBgcCAf/EAE0QAAICAAIFAwoSBwkAAAAAAAABAgMEEQUGBxIxIVGRIidBYXGBobGywRMVIyQlMlJUYmRyc3SSk6Kj0RQmM0KzwuE0NTZjgsPS4vH/xAAbAQEAAgMBAQAAAAAAAAAAAAAABAUCAwYBB//EADsRAQABAgMDBwoFAwUAAAAAAAABAgMEBRESccEGITFBUWGBFCMlMjM0UmKhsRMVIiRygvDxNUJDkeH/2gAMAwEAAhEDEQA/APBwz6SAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACfo3Q1+J/Y1SkuG/yRgv8AUyTZwt276sImIx1ix69XP2da8q1CxLj1VlEO1vTk/BEnU5RdnpmFbVn9iJ5qZl6s1BxCj1NtEnzN2R/lPasnuRHNVDyM/s689M/RT6R1dxOHTdlMnFfvwysj38uHfId3A3rfTCfYzLDXuamrSeyeZVENPAAAAAAAAAAAAAAAAAAAAAAAAABnweEsuu3KoSslk3ux5XkuLNlu1XcnSmNZar1+3Zp2rk6Q96NoU9J1VyXJK6uElweTkk0ZWaNbsUz2sMTcmmxVXT1RMw7PXWo1qMUoxSyUUkkkuwkdlFMRGkPn8zNU6z0vR68AGQGtawao1YmLnUo03cc0sq7H8NLxrwldisvouxrTzVLXA5rdw87NXPT9tzm+Lws6cTKuyLhOLycX41zrtnN3LdVuqaaul19m9ReoiuidYlhNbaAAAAAAAAAAAAAAAAAAAej7GOcklxbSXfPaadZ0Y1VbMTK51o0IsFiq4qbmp172ckk1JPJrk7HAmY3Cxh5iInXWFfluOnF01TMaaSjR0Pa9CvF9T6Ep7uWb3+KjnllwzeXE1xha5s/jdTbOOtxiPJ+tebN4Z6XtlzUNdMo/kTsnjzlU9yu5QT5mmO/gqqobut6jzY/L8YixGmL0+bil1VbWXzPycHWzq3EgAAAA1zXPQSxOAdkI+r1JuOXGyPFwfjXb7pX5hhIvUbUetC0yvHTh7uzV6s9Pd3uXnLu1DwAAAAAAAAAAAAAAD0DwANo2e4dT05JtJqFMms0nk3KKz6My1ymiKrszPVCkz25NNiIiemVbfhVHWt1JZL9NUUlwUXbyLoZHqo0xWz83FKou7WB2/k4Ni2mw6vDS7VsfIZPzin1J3qvk/V7Sncz4WjrayX+VbZ0WykvEbbdHo/wmfq03LnpWJ74j6aIuzOHrrEPmhUuly/I05NHPXO5I5QTzW438FXjIbuveXx2t9M4vzka5GmO/qS7c65Z/RLqR07jgAAAAAOT6z6LlVp+2FcJSjJqyKhFyyjPl7Hwt5d45XG4aqm/VFMd7tctxdNeGpmuqImOZUXUTh7eE4fLjKHjIdVuunpiVhTdor9WqJ8WMxbA8AAAAAAAAAAA+pZs9iJnoeTMRGsvVFe/dGK4ylGK7reRlRTtVRSxuV7FM1dkNj110JXhLKXSmozjJPOTlnKOXLy86fgLHMcLRY2diOlUZPjbmJiuLk6zCHRq+56tzxm/luyeVe77aCai3nnz59BqpwU1Yeb2vg315jFOLjD6dPX3rrZnD11iHzQrXS5fkTMmj9Vc7lfygq/Tbjvngi42rriJc+Jql92MjXcp/f6d8Ntqv0VM90/dbbS4+saHzWyXTHPzErOI83TPehcn587VHdxWODpz1CUefAz8MG/OSaKdcHp8qHeq9ITPz8VTsyj1GJfbpXlkPJo5q53LDlDP6qI38FXpaOWv67eKw78gjX40x3jCXhp1yuf41cXTDpHJAAAAAAAPM4KUcmk0+KazT7x5MRPS9iZidYaprDqZXbW54ZKq1cu4uSqztZfuvuf1KvF5bRXG1b5p+krnA5xctTFN3np+sOd2QcbHGScZRbTi+Rxa5Gmc7VTNM6S62iqKqYqp6JeTFkAAAAAAAAANu2b4ZS0pbY1+zqSXac3x6IvpLjKLcTcqqnqhQZ/cmLVNEdc/b/KNiMCoa+KtLKLxVc0uxlJqfnfQa6rMU47Z79W23emvLJqnp2ZjgvtpVfsZTLmuy6YS/InZvHmqZ71bkFWl+qO7imaKwqeoihl7fC2vvzUpec3WbcTg9ntplGxN3TMJr7Ko+iq2YrqcS/mV5ZFyeOaqdydygn9VvdLFjodcmHbnW/wAP+hjcj0hH99TKzPoqrx+6ftKXsTV9IXkTN+ceyp3o+Qe3q3cVvo6P6o1r4lH+ES7Pu0fx4IF6f3dU/NxUOzH+yX/Lr8TIOT+pVvWfKD2lG6Vbp1dcCPz+F8UCNiffo3wl4T/S6t1TpB0TlAAAAAAAAABz3aLo1QxVeIislZnCfbmlmn3Ws/qlBm1iKaouR180unyHEzVTVZnq54acUrogAAAAAAAABvGzH2+K7lH+4XmTf7/Di5rlD/x+PB50s+uLV8qnp3f/AA9v+/0+BhtfyqvxWW0j+46/pEfImb839jG9FyH3mf4zwWmhP8LU/RY+QSsP7tTuQcT71V/Li17Zg/UMR3afFIgZP0VrXlB69vdLFj31ya/lVr8Mxu/6hT/fUysx6Kq8fvCftKfsRV9IXkTN2ceyp3tGQe3q3cYW+jn+qVb+JR/hEuz7tH8eCvvR+7qj5uKg2Yv1riF8OvxMg5P6tW9acoI85RulWacfXAj8/hl4IEbE+/RvhLwkei6t1TpJ0TlAAAAAAAAABq20bL0hjnx9Hhl3d2fmzKzNtPwPFcZHr5VzdkuanMuxAAAAAAAAAG37NrstKWw93Spd+Ev+zLjJ69LlVPbDn+UFGtqirsn7/wCEXGYve1938+RYuuH1XGD8KZruXNcdr36N1q1s5Zs/LM8V7tLn7HUx57m+iLXnJ2cT5umO9XZBTreqnu4rDRN+Wo8Z+5wln3IyXmJFirTCRV8qHireuPmntqj6qTZjL1TEx+DS/LRByeeeuNyy5QR7Od6JpC7rip82Ipj92K85ru1/v/GPs3WaPRU7pn6rTaXP1jRHntk+iOXnJOcT5umO9D5Px52qe7iscFdlqIpe5wMvuwa8xJt1aYPX5eCHep9ITHz8VPsyny4mPzL8tELJ59eNyx5QRz0Tv4KvScs9fs/jdC6NxEa9OuO8YS7EaZX/AEzxdOOlciAAAAAAAAANA2j6SUr68PF57nqk+1JrKK7uTb76KHN78TMW46ueXTZDh5iKr09fNHFpZSOjAAAAAAAAAGfBYyyjEKyqbhNJreWXB8Vym21drt1bVE6S03rFF6nYrjWHmq5rFRsbbasU23yttSzbFFc/iRVPbqV24/CmiOzRtm0XGxsuw8YTjNKE5vdallvbuXDuMtM2uxVsxE96kyGzVRtzVGnRCTo/E5bN7eXgravrzy/nN1qvTAT4w0X7XpWmO+J+n/iHs2ty0tbH3VOf1ZL8zRk9WlyqO5Jz+nW1RV2SqNI4r9ap2+5xmfehZl4kRbtz91NXzcU6xa0wMUfL94X20y31xh4c0bJdLil4mTc4q56YVnJ+jmrq3QkYbE5bNJP4FlX1rXFeBo20XNMv1ns0+rTctelYjvifpqg7NrMtKXR91Sn9WS/5GjJ6vOVR3JXKCnW1RV3qizEp63eiSeUf03Nt8FFW8ehESa9cXtT8SbFqfINiOnY4OtnVuJAAAAAAAfG8kNdBq+sWuFdFbhQ423cM11Vdb52+y+0isxeY0W4mmjnqW+Bym5emKrnNT9Zc4ttlO1zlJylJuUpPlcm+LZzddU1TtT0uvoopopimmNIh4MWYAAAAAAAAAAAAGVYiaw7rU5qty3nXvPccudrn4dBsi5Vs7OvM1zaomvb0ja7esw+InVbvVzlXLJreg3GWT7GaPKK6qJ1pnSS5aouRs1xrDG+Xjy93smMyziIiNIZMRiJ2TTsnObSUU5ycmorguUzruVV+tOrC3aotxpRERu5hYmf6P6Hvz9Dct70Pee45c+XOPxKtnZ15uw/Bo29vTn7esw+InXZvVzlXLJrehJxlk+KzR5RcqonWmdC5aouRpXGsd7GY6s9NE2nTGIhWoxxF0YpZJKyWSXMuU3xir1MaRVKLVgcPVOs0R/09+nuK99X/AGkj3yy/8UvPy/C/BB6e4r31f9pIeWX/AIpPy/C/BB6e4r31f9pIeWX/AIpPy/C/BB6e4r31f9pIeWX/AIpPy/C/BB6e4r31f9pIeWX/AIpPy/C/BB6e4r31f9pI98sv/FJ+X4b4IR8Tj7rY5WXW2LmnOco9DZrqv3K/WqmfFtt4Wzb56KIjwRjS3gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/2Q=="
+              alt="" srcset=""></a></li>
+        <li><a href="https://www.youtube.com/channel/UCbrp8k6dD3voYCf-Ra_F3Tw?app=desktop"><img
+              src="https://img.icons8.com/color/48/null/youtube-play.png" /></a></li>
+      </ul>
+    </div>
+    <div class="footer-right">
+      <h3 class="footer-right-title">get in touch</h3>
+      <div class="contact">
+        <a id="footer-email" href="mailto: "></a>
+        <a id="footer-number" href="tel:">+234</a>
+
+      </div>
+      <h3 class="footer-right-title">explore</h3>
+      <ul class="footer-link">
+        <li><a href="http://" target="_blank" rel="noopener noreferrer">home</a></li>
+        <li><a href="http://" target="_blank" rel="noopener noreferrer">blog</a></li>
+        <li><a href="http://" target="_blank" rel="noopener noreferrer">event</a></li>
+        <li><a href="http://" target="_blank" rel="noopener noreferrer">about us</a></li>
+        <li><a href="http://" target="_blank" rel="noopener noreferrer">resouces</a></li>
+        <li><a href="http://" target="_blank" rel="noopener noreferrer">Contact us</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <section class="sidebutton">
+
+    <ul class="sidesocial social_link">
+      <li><a href="https://www.facebook.com/esocschurchpage/"><img
+            src="https://img.icons8.com/color/48/null/facebook-new.png" /></a></li>
+      <li><a href="https://www.instagram.com/esocs.church/?hl=en"><img
+            src="https://img.icons8.com/color/48/null/instagram-new--v1.png" /></a></li>
+      <li><a href="https://twitter.com/esocschurch?lang=en"><img
+            src="https://img.icons8.com/color/48/null/twitter--v1.png" /></a></li>
+      <li><a href="https://soundcloud.com/esocs-website/hymn-18-praise-my-soul"><img
+            src="data:image/jpeg;base64,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"
+            alt="" srcset=""></a></li>
+      <li><a href="https://www.youtube.com/channel/UCbrp8k6dD3voYCf-Ra_F3Tw?app=desktop"><img
+            src="https://img.icons8.com/color/48/null/youtube-play.png" /></a></li>
+    </ul>
+  </section>
+  <section class="map">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15856.426696361495!2d3.3680053!3d6.5081794!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8c435dfd5ca5%3A0x271298b27fed152c!2sEternal%20Sacred%20Order%20of%20the%20Cherubim%20and%20Seraphim%20Church!5e0!3m2!1sen!2sng!4v1686565100114!5m2!1sen!2sng"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+
+
+  <script src="../javascript/homebe.js" type="module"></script>
+  <script src="../javascript/home.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../slickslide/slick/slick.min.js" type="text/javascript" charset="utf-8"></script>
+
+
+  <script type="text/javascript">
+    $(document).on('ready', function() {
+   
+  
+  $(".regular").slick({
+    dots: true,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3
+  });
+
+  
+  $(".variable").slick({
+        dots: true,
+        infinite: true,
+        variableWidth: true
+      });
+});
+</script>
+</body>
+
+</html>

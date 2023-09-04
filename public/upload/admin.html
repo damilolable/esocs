@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin</title>
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+
+<body>
+
+
+    <section class="login">
+        <div class="logosside">
+            <img src="../img/esocslogo.png" alt="" srcset="">
+            <h1>esocs church</h1>
+            <h2>admin page</h2>
+
+        </div>
+
+        <div class="form admin-login">
+            <div class="login-header">
+                <h2>log in</h2>
+                <p>by loging in to this place you accept all condition</p>
+            </div>
+            <input type="email" name="login-email" placeholder="email..." id="login-email">
+            <input type="password" placeholder="password" name="login-password" id="login-password">
+            <div class="sign-in">
+                <p>login</p>
+
+            </div>
+        </div>
+
+    </section>
+    <nav>
+        <div class="sidemenubotton">
+            <div class="hidesidemenu" id="hidesidemenu"> <img
+                    src="https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/close/default/48px.svg"
+                    alt="" srcset=""></div>
+            <div id="showsidemenu"><img
+                    src="https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/menu/default/48px.svg"
+                    alt=""></div>
+        </div>
+
+        <div class="esoslogo">
+            <img src="../img/esocslogo.png" alt="">
+        </div>
+        <div class="header">
+            <h2> Admin</h2>
+        </div>
+
+        <div class="seachbotton" id="searchbtn">
+            <img src="https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/search/default/48px.svg"
+                alt="" srcset="">
+        </div>
+        <div class="timestamp">
+            <p id="time">
+
+            </p>
+        </div>
+    </nav>
+
+    <section class="adminbody">
+
+
+
+
+        <section class="rigthmenu" id="rightmenu">
+            <div class="newpost boder">
+                <div class="botton">   
+                    <a href="/editor">             <img src="https://fonts.gstatic.com/s/i/materialiconsoutlined/add_circle_outline/v16/24px.svg" alt=""> new post</a></div>
+            </div>
+            <hr>
+            <div class="noboder">
+                <div class="menubtn" onclick="pagebtn()"> <img
+                        src="https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/article/default/48px.svg"
+                        alt="">
+                    <div class="text">posts</div>
+                </div>
+                <div onclick="postbtn()" class="menubtn"> <img
+                        src="https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/article/default/48px.svg"
+                        alt="">
+                    <div class="text">pages</div>
+                </div>
+
+
+                <div onclick="statsdbtn()" class="menubtn"> <img
+                        src="https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/insights/default/48px.svg"
+                        alt="">
+                    <div class="text">stats</div>
+                </div>
+
+                <div onclick="layoutsbtn()" class="menubtn"> <img
+                        src="https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/view_timeline/default/48px.svg"
+                        alt="">
+                    <div class="text">layout</div>
+                </div>
+
+                <div class="menubtn"> <img
+                        src="https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/preview/default/48px.svg"
+                        alt="">
+                    <div class="text"><a href="/">view site</a> </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="leftbody">
+            < div class="search">
+                <input id="search" type="text" placeholder=" find something" type="search">
+            </div>
+            <section class="admin-intro">
+                <h1>admin</h1>
+                <div class="admin-descrip">
+                    <p>welcome to the main admin page where basic operation could
+                        be done and changes could be made like
+                    <div class="centerwithflex">
+                        <div class="stlye-dommie-btn">
+                            <div>change layout</div>
+                            <div>add new post & delete</div>
+                            <div>add new page and delete</div>
+                        </div>
+                        <button><a href="/" target="_blank" rel="noopener noreferrer">check web page</a></button>
+
+                    </div>
+                    </p>
+                </div>
+            </section>
+            <div class="adminbackend">
+                <section class="postslist">
+
+
+                    <div class="adminaddbtn">
+                        <a href="/editor"><img src="https://fonts.gstatic.com/s/i/materialiconsoutlined/add/v21/24px.svg" alt="" srcset=""></a>
+                    </div>
+        
+
+
+
+                        <!--- 
+      <div class="blog-card">
+                             <img class="blog-image" src="${data.bannerImage}" alt="">
+                             <div class="actioncover>
+                               <h1 class="blog-title">${data.title.substring(0, 100) + "..."}</h1>
+                               <div class="action" >
+                                 <a href="/${blog.id}" class="post-btn">view</a>   
+                                 <a href="/editor/${blog.id}" class="post-btn">edit</a>
+                                 <a class="delete-btn">delete</a>
+                                </div>      
+                              </div>  
+                        </div>
+                    -->
+                </section>
+
+                <section class="pagesbody">
+
+
+                    <div class="adminaddbtn">
+                        <a href="/page-editor"><img src="https://fonts.gstatic.com/s/i/materialiconsoutlined/add/v21/24px.svg" alt="" srcset=""></a>
+                    </div>
+                </section>
+                <section class="statsbody">
+                    
+                    <div></div>
+
+
+
+                </section>
+                <section class="layoutbody">
+                    <section class="nav-layout">
+                        <div class="admin-nav-btn">
+                            <h1>nav</h1>
+                            <p>
+                                click to edit nav
+                            </p>
+                        </div>
+
+                        <div id="admin-nav-show">
+                            <table>
+                                <tr>
+                                    <th>NAV AREA</th>
+                                </tr>
+                                <tr>
+                                    <td class="home">HOME</td>
+                                    <td>text: <input type="text" placeholder="home" id="admin-home-text"></td>
+                                    <td> link: <input type="text" placeholder="www.home.com" id="admin-home-link"></td>
+                                </tr>
+                                <tr>
+                                    <td class="BLOG">BLOG</td>
+                                    <td>text: <input type="text" placeholder="BLOG" id="admin-blog-text"></td>
+                                    <td> link: <input type="text" placeholder="www.blog.com" id="admin-blog-link"></td>
+                                </tr>
+                                <tr>
+                                    <td class="event">EVENT</td>
+                                    <td>text: <input type="text" placeholder="EVENT" id="admin-event-text"></td>
+                                    <td> link: <input type="text" placeholder="www.event.com" id="admin-event-link">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="about">ABOUT</td>
+                                    <td>text: <input type="text" placeholder="ABOUT US" id="admin-aboutus-text"></td>
+                                    <td> link: <input type="text" placeholder="www.aboutus.com" id="admin-aboutus-link">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="resouces">RESOUCES</td>
+                                    <td>text: <input type="text" placeholder="RESOUCES" id="admin-resouses-text"></td>
+                                    <td> link: <input type="text" placeholder="www.resouces.com"
+                                            id="admin-resouce-link"></td>
+                                </tr>
+                                <tr>
+                                    <td><button id="open-tree"> open tree</button></td>
+                                </tr>
+                            </table>
+                            <table class="treecover">
+                                <tr>
+                                    <td class="cmc">cmc</td>
+                                    <td>text: <input type="text" placeholder="cmc" id="admin-cmc-text"></td>
+                                    <td> link: <input type="text" placeholder="www.cmc.com" id="admin-cmc-link"></td>
+                                </tr>
+                                <tr>
+                                    <td class="gna">group and association</td>
+                                    <td>text: <input type="text" placeholder="group and association"
+                                            id="admin-gna-text"></td>
+                                    <td> link: <input type="text" placeholder="www.blog.com" id="admin-gna-link"></td>
+                                </tr>
+                                <tr>
+                                    <td class="profile">profile</td>
+                                    <td>text: <input type="text" placeholder="EVENT" id="admin-profile-text"></td>
+                                    <td> link: <input type="text" placeholder="www.event.com" id="admin-profile-link">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="ourhistory">our history</td>
+                                    <td>text: <input type="text" placeholder="our history" id="admin-ourhistory-text">
+                                    </td>
+                                    <td> link: <input type="text" placeholder="www.ourhistory.com"
+                                            id="admin-ourhistory-link">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="whoweare">who we are</td>
+                                    <td>text: <input type="text" placeholder="whoweare" id="admin-whoweare-text"></td>
+                                    <td> link: <input type="text" placeholder="www.whoweare.com"
+                                            id="admin-whoweare-link"></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="leadership">leadership</td>
+                                    <td>text: <input type="text" placeholder="leadership" id="admin-leadership-text">
+                                    </td>
+                                    <td> link: <input type="text" placeholder="www.leadership.com"
+                                            id="admin-leadership-link"></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="babaaladura">baba aladura</td>
+                                    <td>text: <input type="text" placeholder="baba aladura" id="admin-babaaladura-text">
+                                    </td>
+                                    <td> link: <input type="text" placeholder="www.babaaladura.com"
+                                            id="admin-babaaladura-link"></td>
+                                </tr>
+
+
+                                <tr>
+                                    <td class="boardmember">board member</td>
+                                    <td>text: <input type="text" placeholder="board member" id="admin-boardmember-text">
+                                    </td>
+                                    <td> link: <input type="text" placeholder="www.boardmember.com"
+                                            id="admin-boardmember-link"></td>
+                                </tr>
+
+                            </table>
+                            <table>
+                                <tr>
+                                    <td class="contactus">CONTACT US</td>
+                                    <td>text: <input type="text" placeholder="CONTACT US" id="admin-contactus-text">
+                                    </td>
+                                    <td> link: <input type="text" placeholder="www.contactus.com"
+                                            id="admin-contactus-link"></td>
+                                </tr>
+                                <tr>
+                                    <td><button class="save-nav">done</button></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </section>
+                    <section class="admin-homepage-banner">
+                        <div class="admin-banner-btn" id="admin-banner-btn">
+                            <h1 class="admin-bannner-text" id="admin-banner-text-preview"></h1>
+                            <p>
+                                click to edit banner
+                            </p>
+                        </div>
+                        <div class="admin-upload-cover" id="admin-upload-cover">
+
+                            <table>
+                                <tr>
+                                    <td>upload :<input type="file" name="admin-banner-link" id="admin-banner-link"></td>
+                                    <td>add text : <textarea type="text" name="" id="admin-banner-text"> </textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><button id="save-banner">save</button></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </section>
+                    <section class="footer">
+                        <div class="admin-footer-btn">
+                            <h1>footer link</h1>
+                            <p>
+                                click to edit nav
+                            </p>
+                        </div>
+                        <div class="admin-footer-cover">
+                            <p>get in touch</p>
+                            <table>
+                                <tr>
+                                    <td>email: <input type="email" name="admin-footer-email" id="admin-footer-email"
+                                            required></td>
+                                    <td>add text: <input type="number" name="" id="admin-footer-phone"></td>
+                                </tr>
+                                <tr>
+                                    <td><button id="save-footer">save</button></td>
+                                </tr>
+                            </table>
+
+                        </div>
+                    </section>
+                </section>
+            </div>
+        </section>
+
+    </section>
+
+ 
+    <script src="../javascript/adminmjs.js" type="module"></script>
+    <script src="../javascript/admin.js"></script>
+</body>
+
+</html>
